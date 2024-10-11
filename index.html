@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Todo list</title>
+  </head>
+  <body>
+    <section class="todolist">
+      <div class="todolist__content">
+        <div class="todolist__content-title">
+          <h1 class="todolist__title-text">To-Do list</h1>
+          <img src="Unknown.png" class="todolist__title-img" />
+        </div>
+        <div class="todolist__content-up">
+          <input
+            class="todolist__content-input todolist__input-reset"
+            type="text"
+            placeholder="add your task"
+          />
+          <button class="todolist__content-btn">add</button>
+        </div>
+
+        <div class="todolist__content-down">
+          <ul class="list-reset todo__list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

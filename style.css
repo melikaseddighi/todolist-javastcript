@@ -1,0 +1,152 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(181, 180, 180);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todolist {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
+  /* background-image: url("https://svgsilh.com/svg/146095.svg"); */
+}
+.todolist__content {
+  width: 20vw;
+  height: max-content;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 2rem;
+}
+.todolist__content-title {
+  font-weight: bold;
+  display: flex;
+  gap: 8px;
+}
+.todolist__title-text {
+  margin: 2px;
+  margin-bottom: 4px;
+}
+.todolist__content-up {
+  display: flex;
+  margin-bottom: 8px;
+}
+.todolist__content-down {
+  width: 100%;
+}
+.todolist__content-input {
+  width: 15vw;
+  height: 8vh;
+  border-radius: 0.5rem 0 0 0.5rem;
+  border: 1px solid gray;
+  border-right: 0;
+  padding-left: 2px;
+}
+.todolist__content-btn {
+  width: 5vw;
+  border-radius: 0 0.5rem 0.5rem 0;
+  background-color: rgb(120, 179, 238);
+  border: 1px solid gray;
+  color: white;
+  transition: all 0.5s ease-in;
+}
+.todolist__content-btn:hover {
+  background-color: rgb(33, 123, 214);
+}
+.todolist__title-img {
+  width: 8%;
+  height: 90%;
+  object-fit: contain;
+}
+/* .todolist__input-reset { }*/
+.active_input {
+  background-color: rgb(241, 137, 137);
+  border: 1px solid rgb(231, 72, 72);
+}
+.todo__check {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  border: 1px solid gray;
+  background-color: rgb(225, 222, 222);
+}
+.todo__done {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.todo__done:hover {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  border: none;
+  background-color: rgb(221, 220, 220);
+}
+.todo__item.checked {
+  text-decoration: line-through;
+  color: #cecece;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.todo__item-span {
+  width: 90%;
+  padding: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.todo__item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+}
+.todo__item :not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.todo__item.checked .todo__check {
+  background-color: #fff;
+  border: 2px solid gray;
+}
+.todo__item.checked .todo__check::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: 8px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url("https://svgsilh.com/svg/146095.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(5deg);
+}
+.todo__list {
+  width: 100%;
+}
